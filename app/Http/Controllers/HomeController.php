@@ -67,7 +67,6 @@ class HomeController extends Controller
         $garages = Garage::with('Owner')->where('country','LIKE','%'.$country.'%')->get();
         return response()->json(array('result'=>'true','garages'=>$garages));
 
-
     }
 
 

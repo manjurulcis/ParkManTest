@@ -31,62 +31,77 @@
         <h2>ParkMan Test  Application</h2>
 
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Search BY Country FORM -->
+            <h4>Search By Country</h4>
+            <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
 
-    <!-- NEW COMMENT FORM -->
-    <h4>Search By Country</h4>
-    <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
+                <!-- AUTHOR -->
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm" name="country" id="country"  placeholder="Please enter a country name">
+                </div>
+                <!-- SUBMIT BUTTON -->
+                <div class="form-group text-right">
+                    <button type="submit" id="btncountrysearch" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <!--Search By Garage Nam FORM -->
+            <h4>Search By Garage Name</h4>
+            <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
 
-        <!-- AUTHOR -->
-        <div class="form-group">
-            <input type="text" class="form-control input-sm" name="country" id="country"  placeholder="Please enter a country name">
+                <!-- AUTHOR -->
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm" name="garagename" id="garagename"  placeholder="Please enter a garage name">
+                </div>
+                <!-- SUBMIT BUTTON -->
+                <div class="form-group text-right">
+                    <button type="submit" id="btngaragenamesearch" class="btn btn-primary btn-lg">Search</button>
+                </div>
+            </form>
         </div>
-        <!-- SUBMIT BUTTON -->
-        <div class="form-group text-right">
-            <button type="submit" id="btncountrysearch" class="btn btn-primary btn-lg">Submit</button>
-        </div>
-    </form>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Search By Garage Name FORM -->
+            <h4>Search By Owner Name/Email</h4>
+            <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
 
-    <!-- NEW COMMENT FORM -->
-    <h4>Search By Garage Name</h4>
-    <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
+                <!-- AUTHOR -->
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm" name="ownername" id="ownername"  placeholder="Please enter a garage owner name or email">
+                </div>
+                <!-- SUBMIT BUTTON -->
+                <div class="form-group text-right">
+                    <button type="submit" id="btnownernamesearch" class="btn btn-primary btn-lg">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <!-- Search By LocationM -->
+            <h4>Search By Location</h4>
+            <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
 
-        <!-- AUTHOR -->
-        <div class="form-group">
-            <input type="text" class="form-control input-sm" name="garagename" id="garagename"  placeholder="Please enter a garage name">
+                <!-- AUTHOR -->
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm" name="latlon" id="latlon"  placeholder="Please enter a location(lat lon or both)">
+                </div>
+                <!-- SUBMIT BUTTON -->
+                <div class="form-group text-right">
+                    <button type="submit" id="btnlatlonsearch" class="btn btn-primary btn-lg">Search</button>
+                </div>
+            </form>
         </div>
-        <!-- SUBMIT BUTTON -->
-        <div class="form-group text-right">
-            <button type="submit" id="btngaragenamesearch" class="btn btn-primary btn-lg">Search</button>
-        </div>
-    </form>
+    </div>
 
-    <!-- NEW COMMENT FORM -->
-    <h4>Search By Owner Name/Email</h4>
-    <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
 
-        <!-- AUTHOR -->
-        <div class="form-group">
-            <input type="text" class="form-control input-sm" name="ownername" id="ownername"  placeholder="Please enter a garage owner name or email">
-        </div>
-        <!-- SUBMIT BUTTON -->
-        <div class="form-group text-right">
-            <button type="submit" id="btnownernamesearch" class="btn btn-primary btn-lg">Search</button>
-        </div>
-    </form>
 
-    <!-- NEW COMMENT FORM -->
-    <h4>Search By Location</h4>
-    <form id="searchbycountry"> <!-- ng-submit will disable the default form action and use our function -->
 
-        <!-- AUTHOR -->
-        <div class="form-group">
-            <input type="text" class="form-control input-sm" name="latlon" id="latlon"  placeholder="Please enter a location(lat lon or both)">
-        </div>
-        <!-- SUBMIT BUTTON -->
-        <div class="form-group text-right">
-            <button type="submit" id="btnlatlonsearch" class="btn btn-primary btn-lg">Search</button>
-        </div>
-    </form>
+
+
+
 
     <div id="result" style="min-height: 400px; background-color: #fdfdfd;border: 1px solid #999; padding: 20px;word-break: break-all">
 
