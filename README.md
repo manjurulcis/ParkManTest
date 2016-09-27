@@ -1,2 +1,2 @@
 # ParkManTest
-A sample application for interview purpose
+A sample application for ParkMan interview purpose. Used framework: Laravel 5.3
