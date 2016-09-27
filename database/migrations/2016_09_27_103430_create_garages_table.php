@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateZonesTable extends Migration
+class CreateGaragesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateZonesTable extends Migration
      */
     public function up()
     {
-        Schema::create('zones', function (Blueprint $table) {
+        Schema::create('garages', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('owner_id')->unsigned();
@@ -34,6 +34,6 @@ class CreateZonesTable extends Migration
      */
     public function down()
     {
-        //Schema::drop('zones');
+        //Schema::drop('garages');
     }
 }
