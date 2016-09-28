@@ -93,7 +93,7 @@ class HomeController extends Controller
     /**
      * Show a garage list for a specific email address or by matching email.Default shows all owners
      *
-     * @param  int  $email
+     * @param  string  $email
      * @return Response
      */
     public function searchbyemail($email="")
