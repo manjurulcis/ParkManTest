@@ -11,7 +11,7 @@ $(document).ready(function(){
         }
         $.ajax({
                 method: "GET",
-                url: siteurl+'/home/searchbycountry/'+$('#country').val(),
+                url: siteurl+'/home/searchbycountry/?st='+$('#country').val(),
 
             })
             .done(function( msg ) {
@@ -28,7 +28,7 @@ $(document).ready(function(){
         }
         $.ajax({
                 method: "GET",
-                url: siteurl+'/home/searchbygarage/'+$('#garagename').val(),
+                url: siteurl+'/home/searchbygarage/?st='+$('#garagename').val(),
 
             })
             .done(function( msg ) {
@@ -45,7 +45,7 @@ $(document).ready(function(){
         }
         $.ajax({
                 method: "GET",
-                url: siteurl+'/home/searchbyowner/'+$('#ownername').val(),
+                url: siteurl+'/home/searchbyowner/?st='+$('#ownername').val(),
 
             })
             .done(function( msg ) {
@@ -61,7 +61,7 @@ $(document).ready(function(){
         }
         $.ajax({
                 method: "GET",
-                url: siteurl+'/home/searchbylocation/'+$('#latlon').val(),
+                url: siteurl+'/home/searchbylocation/?st='+$('#latlon').val(),
 
             })
             .done(function( msg ) {

@@ -33,10 +33,10 @@ class HomeController extends Controller
      * @param  string  $garagename
      * @return Response(Json)
      */
-    public function searchbygarage($garagename="")
+    public function searchbygarage(Request $request)
     {
 
-
+        $garagename = $request->st;
         if(isset($garagename) && $garagename == ""){
             $garages = Garage::with('Owner')->get();
             return response()->json(array('result'=>'true','garages'=>$garages));
@@ -55,8 +55,9 @@ class HomeController extends Controller
      * @param  string  $country
      * @return Response
      */
-    public function searchbycountry($country="Finland")
+    public function searchbycountry(Request $request)
     {
+        $country= $request->st;
         //Check if parameter is supplied or not
         if(isset($country) && $country == ""){
             $garages = Garage::with('Owner')->get();
@@ -76,9 +77,9 @@ class HomeController extends Controller
      * @param  string  $ownername
      * @return Response
      */
-    public function searchbyowner($ownername="")
+    public function searchbyowner(Request $request)
     {
-
+        $ownername = $request->st;
         //$garages = Garage::with('Owner')->where('country','LIKE','%'.$country.'%')->get();
         if(isset($ownername) && $ownername == ""){
             $owners = Owner::with('Garage')->get();
@@ -96,9 +97,10 @@ class HomeController extends Controller
      * @param  string  $email
      * @return Response
      */
-    public function searchbyemail($email="")
+    public function searchbyemail(Request $request)
     {
 
+        $email = $request->st;
         if(isset($email) && $email == ""){
             $owners = Owner::with('Garage')->get();
             return response()->json(array('result'=>'true','owners'=>$owners));
@@ -115,8 +117,10 @@ class HomeController extends Controller
      * @param  string  $latlon
      * @return Response
      */
-    public function searchbylocation($latlon="")
+    public function searchbylocation(Request $request)
     {
+
+        $latlon = $request->st;
         //Check if parameter is supplied or not
         if(isset($country) && $country == ""){
             $garages = Garage::with('Owner')->get();
